@@ -1,0 +1,30 @@
+[
+  {
+    "id": 0,
+    "title": "Soumit Mukherjee",
+    "email": "soumit@msotrial.onmicrosoft.com",
+    "jobTitle": "SPFx",
+    "country": "Spain"
+  }, 
+  {
+    "id": 1,
+    "title": "Sourav Paul",
+    "email": "sourav@msotrial.onmicrosoft.com",
+    "jobTitle": "Power Automate",
+    "country": "Germany"
+  },
+  {
+    "id": 2,
+    "title": "Soumyadeep Mukherjee",
+    "email": "soumyadeep@msotrial.onmicrosoft.com",
+    "jobTitle": "Teams",
+    "country": "England"
+  },
+  {
+    "id": 3,
+    "title": "Moumita Pramanick",
+    "email": "moumita@msotrial.onmicrosoft.com",
+    "jobTitle": "Power App",
+    "country": "Italy"
+  }
+]
