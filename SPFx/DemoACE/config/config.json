@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "first-ace-adaptive-card-extension": {
+      "components": [
+        {
+          "entrypoint": "./lib/adaptiveCardExtensions/firstAce/FirstAceAdaptiveCardExtension.js",
+          "manifest": "./src/adaptiveCardExtensions/firstAce/FirstAceAdaptiveCardExtension.manifest.json"
+        }
+      ]
+    },
+    "people-adaptive-card-extension": {
+      "components": [
+        {
+          "entrypoint": "./lib/adaptiveCardExtensions/people/PeopleAdaptiveCardExtension.js",
+          "manifest": "./src/adaptiveCardExtensions/people/PeopleAdaptiveCardExtension.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "FirstAceAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/firstAce/loc/{locale}.js",
+    "PeopleAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/people/loc/{locale}.js"
+  }
+}
