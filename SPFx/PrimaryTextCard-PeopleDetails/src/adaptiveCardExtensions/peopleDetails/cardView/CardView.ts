@@ -6,17 +6,26 @@ import {
   ICardButton
 } from '@microsoft/sp-adaptive-card-extension-base';
 import * as strings from 'PeopleDetailsAdaptiveCardExtensionStrings';
-import { IPeopleDetailsAdaptiveCardExtensionProps, IPeopleDetailsAdaptiveCardExtensionState, QUICK_VIEW_REGISTRY_ID } from '../PeopleDetailsAdaptiveCardExtension';
+import { CREATE_VIEW_REGISTRY_ID, IPeopleDetailsAdaptiveCardExtensionProps, IPeopleDetailsAdaptiveCardExtensionState, QUICK_VIEW_REGISTRY_ID, READ_VIEW_REGISTRY_ID } from '../PeopleDetailsAdaptiveCardExtension';
 
 export class CardView extends BasePrimaryTextCardView<IPeopleDetailsAdaptiveCardExtensionProps, IPeopleDetailsAdaptiveCardExtensionState> {
   public get cardButtons(): [ICardButton] | [ICardButton, ICardButton] | undefined {
     return [
       {
-        title: strings.QuickViewButton,
+        title: "Read People",
         action: {
           type: 'QuickView',
           parameters: {
-            view: QUICK_VIEW_REGISTRY_ID
+            view: READ_VIEW_REGISTRY_ID
+          }
+        }
+      },
+      {
+        title: "Create People",
+        action: {
+          type: 'QuickView',
+          parameters: {
+            view: CREATE_VIEW_REGISTRY_ID
           }
         }
       }
@@ -25,16 +34,16 @@ export class CardView extends BasePrimaryTextCardView<IPeopleDetailsAdaptiveCard
 
   public get data(): IPrimaryTextCardParameters {
     return {
-      primaryText: strings.PrimaryText,
-      description: this.properties.description
+      primaryText: "People Details ACE",
+      description: "Total user details present are " + this.state.peopleData.length,
     };
   }
 
   public get onCardSelection(): IQuickViewCardAction | IExternalLinkCardAction | undefined {
     return {
-      type: 'ExternalLink',
+      type: 'QuickView',
       parameters: {
-        target: 'https://www.bing.com'
+        view: READ_VIEW_REGISTRY_ID
       }
     };
   }
