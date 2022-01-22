@@ -43,13 +43,13 @@ Version|Date|Comments
 - Clone this repository
 - Ensure that you are at the solution folder
 - in the command-line run:
-  - * Serve the solution
-    - **npm install**
-    - **gulp serve**
-  - * Bundle the solution
-    - **gulp build --ship**
-    - **gulp bundle --ship**
-    - **gulp package-solution --ship**
+  * Serve the solution
+    - **`npm install`**
+    - **`gulp serve`**
+  * Bundle the solution
+    - **`gulp build --ship`**
+    - **`gulp bundle --ship`**
+    - **`gulp package-solution --ship`**
 
 > Include any additional steps as needed.
 
