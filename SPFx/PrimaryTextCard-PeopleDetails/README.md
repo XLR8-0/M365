@@ -51,7 +51,6 @@ Version|Date|Comments
     - **`gulp bundle --ship`**
     - **`gulp package-solution --ship`**
 
-> Include any additional steps as needed.
 
 ## Features
 
