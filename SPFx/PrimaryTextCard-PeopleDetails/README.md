@@ -24,7 +24,7 @@ This Adaptive Card Extension shows how to work with form data in an Adaptive Car
 
 Solution|Author(s)
 --------|---------
-PrimaryTextCard-PeopleDetails | Soumyadeep Mukherjee, Soumit Mukherjee ([@msoumit](https://github.com/msoumit)), Sourav Paul ([@XLR8-0](https://github.com/XLR8-0))
+PrimaryTextCard-PeopleDetails | Soumyadeep Mukherjee ([@soumyadeep2207](https://github.com/soumyadeep2207)), Soumit Mukherjee ([@msoumit](https://github.com/msoumit)), Sourav Paul ([@XLR8-0](https://github.com/XLR8-0))
 
 ## Version history
 
