@@ -4,7 +4,7 @@
 
 This Adaptive Card Extension shows how to work with form data in an Adaptive Card. It is an example of how to use an ACE to interact with SharePoint List data using PnPJS.
 
-[picture of the solution in action, if possible]
+[screenshot](assets/PrimaryTextCard-PeopleDetails-Demo.gif)
 
 ## Used SharePoint Framework Version
 

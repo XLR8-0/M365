@@ -112,7 +112,8 @@ export default class PeopleDetailsAdaptiveCardExtension extends BaseAdaptiveCard
   }
 
   protected renderCard(): string | undefined {
-    return this.cardSize === 'Large' ? CARD_VIEW_REGISTRY_ID : MEDIUM_VIEW_REGISTRY_ID;
+    // return this.cardSize === 'Large' ? CARD_VIEW_REGISTRY_ID : MEDIUM_VIEW_REGISTRY_ID;
+    return CARD_VIEW_REGISTRY_ID;
   }
 
   protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {
