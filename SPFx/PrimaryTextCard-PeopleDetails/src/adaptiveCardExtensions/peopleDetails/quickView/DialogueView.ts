@@ -1,7 +1,7 @@
 import { ISPFxAdaptiveCard, BaseAdaptiveCardView, IActionArguments } from '@microsoft/sp-adaptive-card-extension-base';
-import * as strings from 'PeopleAdaptiveCardExtensionStrings';
-import { IPeopleAdaptiveCardExtensionProps, IPeopleAdaptiveCardExtensionState, MESSAGE_VIEW_REGISTRY_ID, READ_VIEW_REGISTRY_ID } from '../PeopleAdaptiveCardExtension';
-import { PnPServices } from '../Services/PnPServices';
+import * as strings from 'PeopleDetailsAdaptiveCardExtensionStrings';
+import { IPeopleDetailsAdaptiveCardExtensionProps, IPeopleDetailsAdaptiveCardExtensionState, MESSAGE_VIEW_REGISTRY_ID, READ_VIEW_REGISTRY_ID } from '../PeopleDetailsAdaptiveCardExtension';
+import { PnPServices } from '../../../Services/PnPServices';
 
 import { sp } from "@pnp/sp";
 import "@pnp/sp/webs";
@@ -13,8 +13,8 @@ export interface IDialogueViewData {
 }
 
 export class DialogueView extends BaseAdaptiveCardView<
-    IPeopleAdaptiveCardExtensionProps,
-    IPeopleAdaptiveCardExtensionState,
+    IPeopleDetailsAdaptiveCardExtensionProps,
+    IPeopleDetailsAdaptiveCardExtensionState,
     IDialogueViewData
 > {
     public get data(): IDialogueViewData {

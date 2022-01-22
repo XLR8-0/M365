@@ -1,20 +1,20 @@
 import { ISPFxAdaptiveCard, BaseAdaptiveCardView, IActionArguments } from '@microsoft/sp-adaptive-card-extension-base';
-import * as strings from 'PeopleAdaptiveCardExtensionStrings';
-import { DIALOGUE_VIEW_REGISTRY_ID, IPeopleAdaptiveCardExtensionProps, IPeopleAdaptiveCardExtensionState, MESSAGE_VIEW_REGISTRY_ID, UPDATE_VIEW_REGISTRY_ID } from '../PeopleAdaptiveCardExtension';
+import * as strings from 'PeopleDetailsAdaptiveCardExtensionStrings';
+import { DIALOGUE_VIEW_REGISTRY_ID, IPeopleDetailsAdaptiveCardExtensionProps, IPeopleDetailsAdaptiveCardExtensionState, MESSAGE_VIEW_REGISTRY_ID, UPDATE_VIEW_REGISTRY_ID } from '../PeopleDetailsAdaptiveCardExtension';
 
 import { sp } from "@pnp/sp";
 import "@pnp/sp/webs";
 import "@pnp/sp/lists";
 import "@pnp/sp/items";
-import { PnPServices } from '../Services/PnPServices';
+import { PnPServices } from '../../../Services/PnPServices';
 
 export interface IReadViewData {
   people?: any;
 }
 
 export class ReadView extends BaseAdaptiveCardView<
-  IPeopleAdaptiveCardExtensionProps,
-  IPeopleAdaptiveCardExtensionState,
+  IPeopleDetailsAdaptiveCardExtensionProps,
+  IPeopleDetailsAdaptiveCardExtensionState,
   IReadViewData
 > {
   public refreshData: any;
@@ -70,7 +70,7 @@ export class ReadView extends BaseAdaptiveCardView<
         this.setState({
           peopleData: this.refreshData["peopleData"],
           countryData: this.refreshData["countryData"],
-          currentIndex: newViewId 
+          currentIndex: newViewId
         });
       }
     }

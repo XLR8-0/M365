@@ -1,7 +1,7 @@
 import { ISPFxAdaptiveCard, BaseAdaptiveCardView, IActionArguments } from '@microsoft/sp-adaptive-card-extension-base';
-import * as strings from 'PeopleAdaptiveCardExtensionStrings';
-import { IPeopleAdaptiveCardExtensionProps, IPeopleAdaptiveCardExtensionState } from '../PeopleAdaptiveCardExtension';
-import { PnPServices } from '../Services/PnPServices';
+import * as strings from 'PeopleDetailsAdaptiveCardExtensionStrings';
+import { IPeopleDetailsAdaptiveCardExtensionProps, IPeopleDetailsAdaptiveCardExtensionState } from '../PeopleDetailsAdaptiveCardExtension';
+import { PnPServices } from '../../../Services/PnPServices';
 
 import { sp } from "@pnp/sp";
 import "@pnp/sp/webs";
@@ -13,8 +13,8 @@ export interface IMessageViewData {
 }
 
 export class MessageView extends BaseAdaptiveCardView<
-  IPeopleAdaptiveCardExtensionProps,
-  IPeopleAdaptiveCardExtensionState,
+  IPeopleDetailsAdaptiveCardExtensionProps,
+  IPeopleDetailsAdaptiveCardExtensionState,
   IMessageViewData
 > {
   public get data(): IMessageViewData {
