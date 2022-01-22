@@ -18,7 +18,7 @@ This Adaptive Card Extension shows how to work with form data in an Adaptive Car
 > Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
 
 ## Prerequisites
-> Run the PowerShell **`CreatePeopleList.ps1`** under *Prerequisites* folder
+> Run the PowerShell **`CreatePeopleList.ps1`** script under *Prerequisites* folder to create required Lists
 
 ## Solution
 
