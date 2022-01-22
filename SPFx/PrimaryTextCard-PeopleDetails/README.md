@@ -8,7 +8,7 @@ This Adaptive Card Extension shows how to work with form data in an Adaptive Car
 
 ## Used SharePoint Framework Version
 
-![version](https://img.shields.io/badge/version-1.13-green.svg)
+![version](https://img.shields.io/badge/version-1.13.1-green.svg)
 
 ## Applies to
 
