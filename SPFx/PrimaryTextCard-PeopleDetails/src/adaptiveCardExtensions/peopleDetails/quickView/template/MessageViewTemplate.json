@@ -9,7 +9,7 @@
       "style": "Person",
       "url": "${messageBar.iconUrl}",
       "backgroundColor": "${messageBar.color}",
-      "size": "medium"
+      "size": "small"
     },
     {
       "type": "TextBlock",
