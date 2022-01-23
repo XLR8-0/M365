@@ -51,7 +51,7 @@ export class UpdateView extends BaseAdaptiveCardView<
               messageBar: {
                 text: "Item updated successfully",
                 success: true,
-                iconUrl: this.state.imgPath + "checkmark_circle_24_filled.svg",
+                iconUrl: this.state._successPng,
                 color: "Green"
               }
             });
@@ -62,7 +62,7 @@ export class UpdateView extends BaseAdaptiveCardView<
               messageBar: {
                 text: "Error occured while updating item",
                 success: false,
-                iconUrl: this.state.imgPath + "error_circle_24_filled.svg",
+                iconUrl: this.state._errorPng,
                 color: "Red"
               }
             });

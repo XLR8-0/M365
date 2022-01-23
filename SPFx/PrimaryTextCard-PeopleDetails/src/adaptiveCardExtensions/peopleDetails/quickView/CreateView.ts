@@ -50,7 +50,8 @@ export class CreateView extends BaseAdaptiveCardView<
               messageBar: {
                 text: "Item added successfully",
                 success: true,
-                iconUrl: this.state.imgPath + "checkmark_circle_24_filled.svg",
+                iconUrl: this.state._successPng,
+                // iconUrl: this.state.imgPath + "checkmark_circle_24_filled.svg",
                 color: "Green"
               }
             });
@@ -61,7 +62,7 @@ export class CreateView extends BaseAdaptiveCardView<
               messageBar: {
                 text: "Error occured while adding item",
                 success: false,
-                iconUrl: this.state.imgPath + "error_circle_24_filled.svg",
+                iconUrl: this.state._errorPng,
                 color: "Red"
               }
             });

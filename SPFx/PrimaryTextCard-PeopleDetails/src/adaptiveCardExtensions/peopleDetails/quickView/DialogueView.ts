@@ -47,7 +47,7 @@ export class DialogueView extends BaseAdaptiveCardView<
                         messageBar: {
                             text: "People deleted successfully",
                             success: true,
-                            iconUrl: this.state.imgPath + "checkmark_circle_24_filled.svg",
+                            iconUrl: this.state._successPng,
                             color: "Green"
                         }
                     });
@@ -64,7 +64,7 @@ export class DialogueView extends BaseAdaptiveCardView<
                         messageBar: {
                             text: "Error occured while deleting item",
                             success: false,
-                            iconUrl: this.state.imgPath + "error_circle_24_filled.svg",
+                            iconUrl: this.state._errorPng,
                             color: "Red"
                         }
                     });
