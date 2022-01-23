@@ -37,7 +37,7 @@ export class ReadView extends BaseAdaptiveCardView<
   public onAction = async (action: IActionArguments) => {
     try {
       if (action.type === 'Submit') {
-        const { id, newIndex } = action.data;
+        const { id } = action.data;
         let idx = this.state.peopleData[this.state.currentIndex].id;
         let newViewId: number = this.state.currentIndex;
         if (id === 'Update') {
